@@ -1,10 +1,12 @@
 # Terraform
 
 ## Projects
+
 - Provision EC2 based HTTP Servers with Load Balancer
 - Provision AWS and Azure Kubernetes Clusters (Azure DevOps Pipelines)
 
 ## Steps
+
 - Step 01 - Creating and Initializing First Terraform Project
 - Step 02 - Create AWS IAM User Access Key and Secret
 - Step 03 - Configure Terraform Environment Variables for AWS Access Keys
@@ -22,7 +24,7 @@
 - Step 15 - Understanding Variables in Terraform
 - Step 16 - Creating Terraform Project for Understanding List and Map
 - Step 17 - Adding Elements - Problem with Terraform Lists
-- Step 18 - Creating Terraform Project for Learning Terraform Maps 
+- Step 18 - Creating Terraform Project for Learning Terraform Maps
 - Step 19 - Quick Review of Terraform FAQ
 - Step 20 - Understanding Creation of EC2 Instances in AWS Console
 - Step 21 - Creating New Terraform Project for AWS EC2 Instances
@@ -37,13 +39,11 @@
 - Step 30 - Creating New Terraform Project for AWS EC2 with Load Balancers
 - Step 31 - Create Security Group and Classic Load Balancer in Terraform
 - Step 32 - Review and Destroy AWS EC2 with Load Balancers
-- Step 33 - Creating Terraform Project for Storing Remote State in S3 
+- Step 33 - Creating Terraform Project for Storing Remote State in S3
 - Step 34 - Create Remote Backend Project for Creating S3 Buckets
 - Step 35 - Update User Project to use AWS S3 Remote Backend
 - Step 36 - Creating multiple environments using Terraform Workspaces
 - Step 37 - Creating multiple environments using Terraform Modules
-
-
 
 ## Commands Executed
 
@@ -54,6 +54,8 @@ terraform version
 terraform init
 export AWS_ACCESS_KEY_ID=*******
 export AWS_SECRET_ACCESS_KEY=*********
+$env:AWS_ACCESS_KEY_ID="**********"
+$env:AWS_SECRET_ACCESS_KEY="**********"
 terraform plan
 terraform console
 terraform apply -refresh=false

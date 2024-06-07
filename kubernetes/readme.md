@@ -1,10 +1,12 @@
 # Kubernetes
 
 ## Projects
+
 - Hello World REST API
 - 2 Microservices - Currency Exchange and Currency Conversion
 
 ## Steps
+
 - Step 01 - Getting Started with Docker, Kubernetes and Google Kubernetes Engine
 - Step 02 - Creating Google Cloud Account
 - Step 03 - Creating Kubernetes Cluster with Google Kubernete Engine (GKE)
@@ -16,11 +18,11 @@
 - Step 09 - Understanding Deployment in Kubernetes
 - Step 10 - Quick Review of Kubernetes Concepts - Pods, Replica Sets and Deployment
 - Step 11 - Understanding Services in Kubernetes
-- Step 12 - Quick Review of GKE on Google Cloud Console 
+- Step 12 - Quick Review of GKE on Google Cloud Console
 - Step 13 - Understanding Kubernetes Architecture - Master Node and Nodes
 - Step 14 - Understand Google Cloud Regions and Zones
 - Step 15 - Installing GCloud
-- Step 16 - Installing Kubectl 
+- Step 16 - Installing Kubectl
 - Step 17 - Understand Kubernetes Rollouts
 - Step 18 - Generate Kubernetes YAML Configuration for Deployment and Service
 - Step 19 - Understand and Improve Kubernetes YAML Configuration
@@ -40,7 +42,6 @@
 - Step 33 - Simplify Microservices with Kubernetes Ingress - Part 1
 - Step 34 - Simplify Microservices with Kubernetes Ingress - Part 2
 - Step 35 - Delete Kubernetes Clusters
-
 
 ## Commands
 
@@ -113,6 +114,8 @@ kubectl rollout history deployment hello-world-rest-api
 kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.3.RELEASE --record=true
 kubectl rollout undo deployment hello-world-rest-api --to-revision=1
 
+watch curl 35.222.157.77:8080/hello-world
+
 kubectl logs hello-world-rest-api-58ff5dd898-6ctr2
 kubectl logs -f hello-world-rest-api-58ff5dd898-6ctr2
 
@@ -151,6 +154,6 @@ kubectl get po
 kubectl delete all -l app=hello-world-rest-api
 kubectl get all
 
-kubectl apply -f deployment.yaml 
-kubectl apply -f ../currency-conversion/deployment.yaml 
+kubectl apply -f deployment.yaml
+kubectl apply -f ../currency-conversion/deployment.yaml
 ```

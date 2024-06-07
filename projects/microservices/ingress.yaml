@@ -6,19 +6,19 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - http:
-      paths:
-      - path: /currency-exchange/
-        pathType: Prefix
-        backend:
-          service:
-           name: currency-exchange
-           port:
-              number: 8000     
-      - path:  /currency-conversion/
-        pathType: Prefix
-        backend:
-          service: 
-           name: currency-conversion
-           port:
-              number: 8100 
+    - http:
+        paths:
+          - path: /currency-exchange/
+            pathType: Prefix
+            backend:
+              service:
+                name: currency-exchange
+                port:
+                  number: 8000
+          - path: /currency-conversion/
+            pathType: Prefix
+            backend:
+              service:
+                name: currency-conversion
+                port:
+                  number: 8100

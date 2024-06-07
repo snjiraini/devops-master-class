@@ -1,0 +1,6 @@
+US East (Ohio) us-east-2
+Amazon Machine Image - ami-0911e88fb4687e06b
+Instance type - t2.micro
+Network:
+    vpc - vpc-0bdace87d3f082f6e
+Subnet
